@@ -14,7 +14,7 @@
 Extract spectrogram features:
 
 ```sh
-python spectrum.py data.h5 list_noisy list_clean
+python spectrum.py data.h5 noisy_list (all one by one) list_clean
 ```
 
 Train DDAE using Keras:
@@ -24,5 +24,5 @@ python train_DNN.py data.h5
 
 Enhance test wave files using trained model:
 ```sh
-python test_gen_spec.py model.hdf5 list_noisy
+python test_gen_spec.py model.hdf5 noisy_list (all one by one)
 ```
