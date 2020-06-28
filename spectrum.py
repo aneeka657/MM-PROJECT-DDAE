@@ -12,7 +12,7 @@ import h5py
 import librosa
 
 if len(sys.argv) < 4:
-    print "Usage: python spectrum.py data.h5 list_noisy list_clean"
+    print "Usage: python spectrum.py data.h5 noisy_list_pinkrose list_clean"
     sys.exit(1) 
 
 FRAMESIZE = 512
