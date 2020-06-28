@@ -36,7 +36,7 @@ def recons_spec_phase(Sxx_r, phase):
     return result
 
 if len(sys.argv) < 3:
-    print "Usage: python test_gen_spec.py model.hdf5 list_noisy"
+    print "Usage: python test_gen_spec.py model.hdf5 noisy_list"
     sys.exit(1) 
 
 model=load_model(sys.argv[1]) #"weights/DNN_spec_20160425v2.hdf5"
